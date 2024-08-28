@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwid Css and Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- custom color and font -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                btnMain: '#ABEF5F',
+                gray: '#737373'
+              },
+              fontFamily: {
+                font: ['Manrope'],
+              },
+            }
+          }
+        }
+      </script>
+      <!-- <style>
+        .bg{
+            background-image: ;
+        }
+      </style> -->
+
+</head>
+<body class="font-font">
+    <!-- navigatin -->
+<header class="lg:px-32 lg:pt-3 lg:pb-3 md:pt-2 pt-2 bg-[#f5f5f5]">
+    <nav>
+        <div class="navbar">
+            <div class="navbar-start lg:hidden">
+                <a class="font-extrabold flex items-center space-x-2">
+                    <span class="inline-flex items-center justify-center w-7 h-7 bg-btnMain rounded-full">
+                        <i class="fas fa-arrow-right text-white -rotate-45 rounded-full w-7 h-7 flex items-center justify-center"></i>
+                    </span>
+                    <span class="text-xl">Build BD</span>
+                </a>                         
+                </div>
+                <div class="navbar-end lg:hidden">
+                    <div class="dropdown relative">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-white rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content z-[1] mt-3 p-2 absolute -ml-9">
+                            <li><a class="text-[16px] font-extrabold">Home</a></li>
+                            <li><a class="text-[16px] font-[400] text-gray-500">Services</a></li>
+                            <li><a class="text-[16px] font-[400] text-gray-500">Portfolio</a></li>
+                            <li><a class="text-[16px] font-[400] text-gray-500">Blogs</a></li>
+                            <li><a class="text-[16px] font-[400] text-gray-500">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            <!-- Navbar for large devices -->
+            <div class="navbar-start hidden lg:flex">
+                <a class="font-extrabold text-2xl flex items-center space-x-2">
+                    <span class="inline-flex items-center justify-center w-10 h-10 bg-btnMain rounded-full">
+                        <i class="fas fa-arrow-right text-white -rotate-45 rounded-full w-10 h-10 flex items-center justify-center"></i>
+                    </span>
+                    <span class="text-3xl">Build BD</span>
+                </a> 
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-[16px] font-extrabold">Home </a></li>
+                    <li><a class="text-[16px] font-[400] text-gray">Services</a></li>
+                    <li><a class="text-[16px] font-[400] text-gray">Portfolio</a></li>
+                    <li><a class="text-[16px] font-[400] text-gray">Blogs</a></li>
+                    <li><a class="text-[16px] font-[400] text-gray">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end hidden lg:flex space-x-4">
+                <i class="fas fa-search bg-white p-2 rounded-full lg:block md:block hidden" style="color: #737373;"></i>
+                <i class="fas fa-cart-shopping bg-white p-2 rounded-full lg:block md:block hidden" style="color: #737373;"></i>
+                
+                <!-- Button visible only on medium and larger devices -->
+                <button class="px-[15px] py-[8px] bg-btnMain rounded-3xl text-[16px] font-extrabold hidden md:flex items-center">
+                  Book Consult
+                  <i class="fas fa-arrow-right ml-2 p-2 bg-black rounded-full -rotate-45" style="color: white;"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- header section -->
+    <section class="lg:mb-10 pb-10">
+        <img src="./assets/banner.png" class="lg:w-1/2 mx-auto w-[80%] lg:mt-10" alt="">
+        <div class="space-y-5 lg:w-3/4 w-[90%] mx-auto text-center lg:mt-7 mt-3">
+            <h1 class="lg:text-5xl text-[28px] font-extrabold leading-8">Build BD: Crafting Dream Homes with Precision, Quality, and Expertise</h1>
+            <p>"Build BD specializes in designing and constructing high-quality homes, delivering exceptional craftsmanship and personalized service to turn your vision into reality, from concept to completion."
+            </p>
+            <button class="bg-[#ABEF5F80] px-4 py-2 rounded-3xl border font-extrabold border-btnMain">View Details 
+                <i class="fas fa-arrow-right  text-black bg-btnMain p-2 rounded-full -rotate-45"></i>
+            </button>
+        </div>
+    </section>
+
+</header>
+
+
+<!-- main content  -->
+    <main class="">
+        <!-- We design thoughtful, liveable spaces -->
+        <section class="lg:pt-5 lg:pb-14 py-3 bg-[#e9e8e8] lg:px-32 px-5">
+            <img class="hidden lg:block lg:mb-7 relative -ml-12" src="./assets/Vector.png" alt="">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4">
+               <div class="space-y-8">
+                <div class="grid place-items-center text-center w-[80%] mx-auto space-y-5 lg:place-items-start lg:text-left lg:w-full">
+                    <button class="bg-white px-3 py-1 rounded-3xl font-bold">
+                        <i class="fas fa-arrow-right text-black p-2 rounded"></i>
+                        About Us
+                    </button>
+                    <h1 class="lg:text-[40px] lg:font-extrabold text-2xl font-bold leading-10">We design thoughtful, liveable spaces</h1>
+                    <p class="text-[#494949]">At Build BD, we believe that every home should be a sanctuary that reflects your unique lifestyle and personality.</p>
+                </div>
+                   <div class="flex bg-white justify-between lg:items-center p-7 rounded-lg py-5">
+                       <img class="lg:w-[67px] lg:h-full w-[40px] h-[40px]" src="./assets/commercial.png" alt="">
+                           <div class="w-4/5 space-y-5 lg:space-y-3">
+                               <h2 class="text-xl font-bold">Commercial</h2>
+                               <p class="text-[#737373] text[16px]">"Efficient, modern commercial spaces designed for functionality and business success."</p>
+                           </div>
+                       </img>
+                   </div>
+                   <div class="flex bg-white justify-between lg:items-center p-7 rounded-lg">
+                    <img class="lg:w-[67px] lg:h-full w-[40px] h-[40px]" src="./assets/residential.png" alt="">
+                        <div class="w-4/5 space-y-5 lg:space-y-3">
+                            <h2 class="text-xl font-bold">Residential</h2>
+                            <p class="text-[#737373] text[16px]"> personalized, high-quality residential spaces that blend comfort, style, and functionality.</p>
+                        </div>
+                    </img>
+                </div>
+               </div>
+               <div class="mt-5 lg:mt-4">
+                   <img src="./assets/Rectangle.png" alt="">
+               </div>
+            </div>
+        </section>
+
+        <!-- Our Works Process -->
+         <section class="lg:pt-16 lg:pb-14 py-10 bg-[#e9e8e8] lg:px-32 px-6">
+            <div class="grid place-items-center text-center lg:w-[60%] mx-auto lg:space-y-7 space-y-3 lg:pb-0 pb-8">
+                <button class="bg-white px-3 py-1 rounded-3xl font-bold">
+                    <i class="fas fa-arrow-right text-black p-2 rounded"></i>
+                    How we works
+                </button>
+                <h1 class="lg:text-[40px] text-2xl font-bold">Our Works Process</h1>
+                <p class="text-[#494949]">"Our work process ensures seamless project execution, from initial consultation to final delivery, with transparency and precision."</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-y-4 lg:gap-x-4 lg:mt-5">
+                <div class="space-y-3 bg-[#E7C1D3] p-5 rounded-xl">
+                    <img src="./assets/concept.png" alt="">
+                    <h1 class="text-xl font-extrabold">Concept</h1>
+                    <p class="text-[#494949] font-medium">"Transforming your vision into innovative, functional design concepts tailored to your needs."</p>
+                </div>
+                <div class="space-y-3 bg-[#EFDA6E] p-5 rounded-xl">
+                    <img src="./assets/flow-chart.png" alt="">
+                    <h1 class="text-xl font-extrabold">Design Process</h1>
+                    <p class="text-[#494949] font-medium">"From concept to completion, our design process ensures precision, creativity, and seamless execution"</p>
+                </div>
+                <div class="space-y-3 bg-[#A4DAC3] p-5 rounded-xl">
+                    <img src="./assets/vision.png" alt="">
+                    <h1 class="text-xl font-extrabold">Supervision</h1>
+                    <p class="text-[#494949] font-medium">"Expert supervision ensures every detail is meticulously managed, maintaining quality and timely project "</p>
+                </div>
+                <div class="space-y-3 bg-[#77AAEA] p-5 rounded-xl">
+                    <img src="./assets/budget-planning.png" alt="">
+                    <h1 class="text-xl font-extrabold">Budget Planning</h1>
+                    <p class="text-[#494949] font-medium">"Comprehensive budget planning to maximize value while ensuring your project stays on track "</p>
+                </div>
+            </div>
+         </section>
+
+  <!-- Our Latest Portfolio -->
+        <section class="bg-white">
+            <div class="lg:pt-16 lg:pb-14 py-10 lg:px-32 px-6">
+                <div class="grid place-items-center text-center lg:w-[60%] mx-auto lg:space-y-7 space-y-3 lg:pb-0 pb-8">
+                    <button class="bg-[#ABEF5F33] px-3 py-1 rounded-3xl font-bold">
+                        <i class="fas fa-arrow-right text-black p-2 rounded"></i>
+                        Explore our Latest works
+                    </button>
+                    <h1 class="lg:text-[40px] text-2xl font-bold">Our Latest Portfolio</h1>
+                    <p class="text-[#494949]">"Explore our latest portfolio showcasing diverse projects that highlight our commitment to quality, innovation, and exceptional craftsmanship in every design."</p>
+                </div>
+
+                <!-- Portfolio -->
+                <div class="mt-10">
+                    <!-- first -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-5 gap-y-5">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 col-span-2 border border-[#E9E9E9] rounded-xl p-4">
+                                <img class="lg:w-auto w-full h-[195px]" src="./assets/img1.png" alt="">
+                            <div class="space-y-3 lg:mt-0 mt-5 lg:pl-5 lg:relative lg:ml-[-70px]">
+                                <h1 class="text-2xl font-extrabold">Commercial</h1>
+                                <p class="text-[#737373]">"Build BD delivers innovative commercial spaces that combine functionality, efficiency, and modern design for your business."</p>
+                                <button class="text-xl font-extrabold">View Details 
+                                    <i class="fas fa-arrow-right  text-black bg-btnMain p-2 rounded-full -rotate-45"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="border border-[#E9E9E9] rounded-xl p-4 grid place-items-center"><img class="lg:h-[13rem] h-[195px]" src="./assets/img2.png" alt=""></div>
+                    </div>
+
+                    <!-- second -->
+                <div class="grid grid-cols-1 lg:grid-cols-4 lg:mt-5 mt-3 lg:gap-x-5 lg:space-y-0 space-y-4">
+                    <div class="border border-[#E9E9E9] rounded-xl p-4 lg:order-none order-last lg:my-0 my-4"><img class="lg:w-auto w-[340px] lg:h-full h-[195px]" src="./assets/img3.png" alt=""></div>
+                    <div class="col-span-2 grid grid-cols-1 lg:grid-cols-2 border border-[#E9E9E9] rounded-xl p-4">
+                        <div>
+                            <img class="lg:w-auto w-[340px] lg:h-full h-[195px]" src="./assets/img4.png" alt="">
+                        </div>
+                        <div class="lg:ml-4 space-y-3 lg:mt-0 mt-5 items-center">
+                            <h1 class="text-2xl font-extrabold">Residential</h1>
+                            <p class="text-[#737373]">"Crafting personalized, high-quality residential spaces that blend comfort, style, and functionality."</p>
+                            <button class="text-xl font-extrabold">View Details 
+                                <i class="fas fa-arrow-right  text-black bg-btnMain p-2 rounded-full -rotate-45"></i>
+                            </button>                        
+                        </div>
+                    </div>
+                    <div class="border border-[#E9E9E9] rounded-xl p-4 lg:order-none order-first"><img class="lg:w-full w-[340px] lg:h-full h-[195px]" src="./assets/img5.png" alt="">
+                    </div>
+                </div>
+                
+                    <!-- repeatet section -->
+                    <div class="border border-[#E9E9E9] rounded-xl p-4 lg:order-none order-first lg:hidden block"><img class="lg:w-full w-[340px] lg:h-full h-[195px]" src="./assets/img5.png" alt=""></div>
+                    </div>
+        </section>
+
+          <!-- WHat our Client Say -->
+           <section class="lg:pt-14 lg:pb-14 py-3 bg-[#e9e8e8] lg:px-32 px-5 grid grid-cols-1 lg:grid-cols-3 gap-x-8">
+            
+            <div class="space-y-3 lg:text-left text-center mb-5 lg:mt-7">
+                <p class="text-xl font-semibold text-btnMain">Top Properties</p>
+                <h1 class="text-4xl font-extrabold">What’s people say’s</h1>
+                <p class="text-[#737373]">Our seasoned team excels in real estate with years of successful market navigation, offering informed decisions and optimal results.
+                </p>
+                <div class="flex space-x-3 lg:justify-start justify-center">
+                    <i class="fas fa-chevron-left bg-btnMain text-white rounded-full w-10 h-10 flex items-center justify-center cursor-pointer"></i>
+                    <i class="fas fas fa-chevron-right bg-btnMain text-white rounded-full w-10 h-10 flex items-center justify-center cursor-pointer"></i>
+                </div>
+            </div>
+            <!-- client -->
+            <div class="bg-white rounded-xl p-5 space-y-3 mb-5">
+                <img class="w-28" src="./assets/rating.png" alt="">
+                <p class="text-[#737373]">"I truly appreciate the professionalism and in-depth knowledge of the brokerage team. They not only helped me find the perfect home but also assisted with legal and financial aspects, making me feel confident and secure in my decision."
+                </p>
+                <div class="flex ">
+                    <div>
+                        <img class="rounded-full w-12" src="https://homezennextjs.vercel.app/images/avatar/avt-7.jpg" alt="">
+                    </div>
+                    <div class="pl-4">
+                        <h1 class="text-xl font-extrabold">Jack Ryan</h1>
+                        <p class="text-[14px] text-[#737373]">CEO Digital</p>
+                    </div>
+                </div>
+            </div>
+            <!-- client -->
+            <div class="bg-white rounded-xl p-5 space-y-3 mb-5">
+                <img class="w-28" src="./assets/rating.png" alt="">
+                <p class="text-[#737373]">"My experience with property management services has exceeded expectations. They efficiently manage properties with a professional and attentive approach in every situation. I feel reassured that any issue will be resolved promptly and effectively."
+                </p>
+                <div class="flex ">
+                    <div>
+                        <img class="rounded-full w-12" src="https://homezennextjs.vercel.app/images/avatar/avt-5.jpg" alt="">
+                    </div>
+                    <div class="pl-4">
+                        <h1 class="text-xl font-extrabold">Emma Grace</h1>
+                        <p class="text-[14px] text-[#737373]">CEO  Agency</p>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+           </section>
+
+           <!-- Let’s Discuss Next Project -->
+            <section class="lg:pt-16 lg:pb-14 py-10 lg:px-32 px-6 mt-2 bg-[url(./assets/bg.jpg)] bg-no-repeat bg-cover">
+                <div class="grid place-items-center text-center lg:w-[60%] mx-auto lg:space-y-7 space-y-3 lg:pb-0 pb-8">
+                    <button class="bg-[#ABEF5F33] px-3 py-1 rounded-3xl font-bold">
+                        <i class="fas fa-arrow-right text-black p-2 rounded"></i>
+                        Let’s Connect
+                    </button>
+                    <h1 class="lg:text-[40px] text-2xl font-bold">Let’s Discuss Next Project</h1>
+                    <p class="text-[#494949]">"Let’s discuss your next project to explore creative solutions, set goals, and bring your vision to life with expert guidance."</p>
+                </div>
+                <!-- form -->
+                <form class="max-w-3xl mx-auto p-4 ">
+                    <!-- First Name and Last Name -->
+                    <div class="flex flex-wrap -mx-2 mb-4">
+                      <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700"></label>
+                        <input type="text" id="first-name" class="mt-1 block w-full h-10 pl-4 rounded-3xl border-gray-300 shadow-sm sm:text-sm" placeholder="First Name*" required>
+                      </div>
+                      <div class="w-full md:w-1/2 px-2">
+                        <label for="last-name" class="block text-sm font-medium text-gray-700"></label>
+                        <input type="text" id="last-name" class="mt-1 block w-full h-10 pl-4 rounded-3xl border-gray-300 shadow-sm sm:text-sm" placeholder="Last Name*" required>
+                      </div>
+                    </div>
+                  
+                    <!-- Phone Number and Email -->
+                    <div class="flex flex-wrap -mx-2 mb-4">
+                      <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+                        <label for="phone" class="block text-sm font-medium text-gray-700"></label>
+                        <input type="tel" id="phone" class="mt-1 block w-full h-10 pl-4 rounded-3xl border-gray-300 shadow-sm sm:text-sm" placeholder="Phone Number*" required>
+                      </div>
+                      <div class="w-full md:w-1/2 px-2">
+                        <label for="email" class="block text-sm font-medium text-gray-700"></label>
+                        <input type="email" id="email" class="mt-1 block w-full h-10 pl-4 rounded-3xl border-gray-300 shadow-sm sm:text-sm" placeholder="Email Number*" required>
+                      </div>
+                    </div>
+                  
+                    <!-- Message Text Area -->
+                    <div class="mb-4">
+                      <label for="message" class="block text-sm font-medium text-gray-700"></label>
+                      <textarea id="message" rows="4" class="mt-1 block w-full h-40 pt-5 pl-4 rounded-3xl border-gray-300 shadow-sm sm:text-sm" placeholder="Write your message here..."></textarea>
+                    </div>
+                  
+                    <!-- Submit Button -->
+                    <div>
+                      <button type="submit" class="w-full bg-btnMain text-black font-bold py-2 px-4 rounded-3xl shadow-sm  focus:ring-2  focus:ring-offset-2">
+                        Send Mail 
+                        <i class="fas fa-arrow-right ml-2 p-2 bg-black rounded-full -rotate-45" style="color: white;"></i>
+                      </button>
+                    </div>
+                  </form>
+                  
+            </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="bg-[#1C1C1C] lg:px-40 lg:py-14 py-10">
+        <div class=" grid place-items-center lg:space-y-7 space-y-4">
+            <a class="font-extrabold text-2xl flex items-center space-x-2">
+                <span class="inline-flex items-center justify-center w-10 h-10 bg-btnMain rounded-full">
+                    <i class="fas fa-arrow-right text-white -rotate-45 rounded-full w-10 h-10 flex items-center justify-center"></i>
+                </span>
+                <span class="text-3xl text-white">Build BD</span>
+            </a>  
+            <p class="lg:w-1/2 mx-auto text-[#737373] text-center w-4/5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <ul class="lg:flex text-white lg:space-x-20 px-1 lg:space-y-0 space-y-7 text-center">
+                <li><a class="text-[16px] font-[400]">Home </a></li>
+                <li><a class="text-[16px] font-[400] text-white">Services</a></li>
+                <li><a class="text-[16px] font-[400] text-white">Portfolio</a></li>
+                <li><a class="text-[16px] font-[400] text-white">Blogs</a></li>
+                <li><a class="text-[16px] font-[400] text-white">Contact Us</a></li>
+            </ul>
+            <button class="lg:px-[15px] lg:py-[8px] w-4/5 lg:w-1/4 h-12 bg-btnMain rounded-3xl text-[16px] font-bold items-center">
+                Book Consult
+                <i class="fas fa-arrow-right ml-2 p-2 bg-black rounded-full -rotate-45" style="color: white;"></i>
+              </button>
+        </div>
+    </footer>
+</html>
